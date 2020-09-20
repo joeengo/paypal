@@ -1,0 +1,329 @@
+-- ui by joe engo
+
+
+local Poopal = Instance.new("ScreenGui")
+local Frame = Instance.new("ImageLabel")
+local Open = Instance.new("TextButton")
+local Main = Instance.new("ImageLabel")
+local Rob = Instance.new("TextButton")
+local KA = Instance.new("TextButton")
+local AutoBreak = Instance.new("TextButton")
+local FillA1 = Instance.new("TextLabel")
+local FillA2 = Instance.new("TextLabel")
+local FillA3 = Instance.new("TextLabel")
+local TextLabel = Instance.new("TextLabel")
+local STATS = Instance.new("TextLabel")
+
+--Properties:
+
+Poopal.Name = "Poopal"
+Poopal.Parent = game:GetService('CoreGui')
+
+Frame.Name = "Frame"
+Frame.Parent = Poopal
+Frame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Frame.BackgroundTransparency = 1.000
+Frame.Position = UDim2.new(0.434324622, 0, 0.372202605, 0)
+Frame.Size = UDim2.new(0, 211, 0, 58)
+Frame.ZIndex = 4
+Frame.Image = "rbxassetid://3570695787"
+Frame.ImageColor3 = Color3.fromRGB(33, 33, 33)
+Frame.ScaleType = Enum.ScaleType.Slice
+Frame.SliceCenter = Rect.new(100, 100, 100, 100)
+Frame.SliceScale = 0.050
+
+Open.Name = "Open"
+Open.Parent = Frame
+Open.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Open.BackgroundTransparency = 1.000
+Open.Position = UDim2.new(0.819905221, 0, 0.125458404, 0)
+Open.Rotation = 360.000
+Open.Size = UDim2.new(0, 23, 0, 18)
+Open.ZIndex = 5
+Open.Font = Enum.Font.GothamSemibold
+Open.Text = "↓"
+Open.TextColor3 = Color3.fromRGB(83, 255, 123)
+Open.TextSize = 20.000
+Open.TextWrapped = true
+
+Main.Name = "Main"
+Main.Parent = Frame
+Main.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Main.BackgroundTransparency = 1.000
+Main.Position = UDim2.new(-0.00122475286, 0, -0.00140364468, 0)
+Main.Size = UDim2.new(0, 211, 0, 239)
+Main.Image = "rbxassetid://3570695787"
+Main.ImageColor3 = Color3.fromRGB(33, 33, 33)
+Main.ScaleType = Enum.ScaleType.Slice
+Main.SliceCenter = Rect.new(100, 100, 100, 100)
+Main.SliceScale = 0.050
+
+Rob.Name = "Rob"
+Rob.Parent = Main
+Rob.BackgroundColor3 = Color3.fromRGB(33, 33, 33)
+Rob.BorderColor3 = Color3.fromRGB(11, 11, 11)
+Rob.BorderSizePixel = 0
+Rob.Position = UDim2.new(0.137440756, 0, 0.333421648, 0)
+Rob.Size = UDim2.new(0, 154, 0, 30)
+Rob.ZIndex = 2
+Rob.Font = Enum.Font.SourceSansBold
+Rob.Text = "Autorob"
+Rob.TextColor3 = Color3.fromRGB(255, 255, 255)
+Rob.TextScaled = true
+Rob.TextSize = 14.000
+Rob.TextStrokeColor3 = Color3.fromRGB(255, 84, 84)
+Rob.TextStrokeTransparency = 0.000
+Rob.TextWrapped = true
+
+KA.Name = "KA"
+KA.Parent = Main
+KA.BackgroundColor3 = Color3.fromRGB(33, 33, 33)
+KA.BorderColor3 = Color3.fromRGB(11, 11, 11)
+KA.BorderSizePixel = 0
+KA.Position = UDim2.new(0.137440756, 0, 0.509153962, 0)
+KA.Size = UDim2.new(0, 154, 0, 30)
+KA.ZIndex = 2
+KA.Font = Enum.Font.SourceSansBold
+KA.Text = "Killaura"
+KA.TextColor3 = Color3.fromRGB(255, 255, 255)
+KA.TextScaled = true
+KA.TextSize = 14.000
+KA.TextStrokeColor3 = Color3.fromRGB(255, 89, 89)
+KA.TextStrokeTransparency = 0.000
+KA.TextWrapped = true
+
+AutoBreak.Name = "AutoBreak"
+AutoBreak.Parent = Main
+AutoBreak.BackgroundColor3 = Color3.fromRGB(33, 33, 33)
+AutoBreak.BorderColor3 = Color3.fromRGB(11, 11, 11)
+AutoBreak.BorderSizePixel = 0
+AutoBreak.Position = UDim2.new(0.137440756, 0, 0.684886098, 0)
+AutoBreak.Size = UDim2.new(0, 154, 0, 30)
+AutoBreak.ZIndex = 2
+AutoBreak.Font = Enum.Font.SourceSansBold
+AutoBreak.Text = "AutoEscape"
+AutoBreak.TextColor3 = Color3.fromRGB(255, 255, 255)
+AutoBreak.TextScaled = true
+AutoBreak.TextSize = 14.000
+AutoBreak.TextStrokeColor3 = Color3.fromRGB(190, 72, 72)
+AutoBreak.TextStrokeTransparency = 0.000
+AutoBreak.TextWrapped = true
+
+FillA1.Name = "FillA1"
+FillA1.Parent = Main
+FillA1.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+FillA1.BorderSizePixel = 0
+FillA1.Position = UDim2.new(0.127521247, 0, 0.32923755, 0)
+FillA1.Size = UDim2.new(0, 158, 0, 32)
+FillA1.Font = Enum.Font.SourceSans
+FillA1.TextColor3 = Color3.fromRGB(0, 0, 0)
+FillA1.TextSize = 14.000
+
+FillA2.Name = "FillA2"
+FillA2.Parent = Main
+FillA2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+FillA2.BorderSizePixel = 0
+FillA2.Position = UDim2.new(0.129186839, 0, 0.504969895, 0)
+FillA2.Size = UDim2.new(0, 158, 0, 32)
+FillA2.Font = Enum.Font.SourceSans
+FillA2.TextColor3 = Color3.fromRGB(0, 0, 0)
+FillA2.TextSize = 14.000
+
+FillA3.Name = "FillA3"
+FillA3.Parent = Main
+FillA3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+FillA3.BorderSizePixel = 0
+FillA3.Position = UDim2.new(0.129186839, 0, 0.68070209, 0)
+FillA3.Size = UDim2.new(0, 158, 0, 32)
+FillA3.Font = Enum.Font.SourceSans
+FillA3.TextColor3 = Color3.fromRGB(0, 0, 0)
+FillA3.TextSize = 14.000
+
+TextLabel.Parent = Frame
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.Position = UDim2.new(0.0663507059, 0, 0.0575935245, 0)
+TextLabel.Size = UDim2.new(0, 135, 0, 27)
+TextLabel.ZIndex = 5
+TextLabel.Font = Enum.Font.SourceSans
+TextLabel.Text = "Paypal [BETA]"
+TextLabel.TextColor3 = Color3.fromRGB(83, 255, 123)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 14.000
+TextLabel.TextWrapped = true
+
+STATS.Name = "STATS"
+STATS.Parent = Frame
+STATS.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+STATS.BackgroundTransparency = 1.000
+STATS.Position = UDim2.new(0.00122475298, 0, 0.510653615, 0)
+STATS.Size = UDim2.new(0, 210, 0, 27)
+STATS.ZIndex = 4
+STATS.Font = Enum.Font.SourceSansBold
+STATS.Text = "0_0"
+STATS.TextColor3 = Color3.fromRGB(255, 255, 255)
+STATS.TextSize = 20.000
+STATS.TextStrokeTransparency = 0.000
+STATS.TextWrapped = true
+
+-- Scripts:
+
+local function YZBB_fake_script() -- Open.Script 
+	local script = Instance.new('Script', Open)
+
+	local out = false
+	script.Parent.Parent.Main.AutoBreak.Visible = false
+	
+	script.Parent.Parent.Main.FillA3.Visible = false
+	script.Parent.Parent.Main.FillA2.Visible = false
+	local x = "↓"
+	
+	local TweenService = game:GetService("TweenService")
+	
+	function Rotate(guiobj, angle, duration)
+		local Info = TweenInfo.new(duration)
+		local Tween = TweenService:Create(guiobj, Info, {Rotation = angle})
+		Tween:Play()
+	end
+	
+	script.Parent.Parent.Main.Size = UDim2.new(0, 211, 0, 47)
+	
+	local IsOpen = false
+	script.Parent.MouseButton1Down:Connect(function()
+		if not IsOpen then
+			Rotate(script.Parent, 180, 1)
+			IsOpen = true
+		elseif IsOpen then
+			Rotate(script.Parent, 360, 1)
+			IsOpen = false
+		end
+	
+	end)
+	
+	script.Parent.Text = x
+	script.Parent.MouseButton1Click:Connect(function()
+		if not out then
+			script.Parent.Parent.Main:TweenSize(UDim2.new(0, 211, 0, 239), "Out", "Quart", 0.85)
+			out = true 
+			script.Parent.Parent.Main.AutoBreak.Visible = true
+		
+			script.Parent.Parent.Main.FillA3.Visible = true
+			script.Parent.Parent.Main.FillA2.Visible = true
+	 		wait(0.7)
+		elseif out then
+			script.Parent.Parent.Main:TweenSize(UDim2.new(0, 211, 0, 47), "In", "Quint", 0.85)
+			out = false
+			wait(0.7)
+			script.Parent.Parent.Main.AutoBreak.Visible = false
+			
+			script.Parent.Parent.Main.FillA3.Visible = false
+			script.Parent.Parent.Main.FillA2.Visible = false
+		end
+	end)
+end
+coroutine.wrap(YZBB_fake_script)()
+local function EETMH_fake_script() -- Rob.Script 
+	local script = Instance.new('Script', Rob)
+
+	local x = script.Parent
+	local rob = false
+	
+	x.MouseButton1Click:Connect(function()	
+		if not rob then
+			x.TextStrokeColor3 = Color3.fromRGB(67, 115, 86)
+			getgenv().AutoRob = true
+			rob = true 
+		elseif rob then
+			x.TextStrokeColor3 = Color3.fromRGB(255, 84, 84)
+			getgenv().AutoRob = false
+			rob = false
+		end
+	end)
+end
+coroutine.wrap(EETMH_fake_script)()
+local function RWENSH_fake_script() -- KA.Script 
+	local script = Instance.new('Script', KA)
+
+	local x = script.Parent
+	local rob = false
+	
+	x.MouseButton1Click:Connect(function()	
+		if not rob then
+			x.TextStrokeColor3 = Color3.fromRGB(67, 115, 86)
+			getgenv().killaura = true
+			rob = true 
+		elseif rob then
+			x.TextStrokeColor3 = Color3.fromRGB(255, 84, 84)
+			getgenv().killaura = false
+			rob = false
+		end
+	end)
+end
+coroutine.wrap(RWENSH_fake_script)()
+local function OIDRS_fake_script() -- AutoBreak.Script 
+	local script = Instance.new('Script', AutoBreak)
+
+	local x = script.Parent
+	local rob = false
+	
+	x.MouseButton1Click:Connect(function()	
+		if not rob then
+			x.TextStrokeColor3 = Color3.fromRGB(67, 115, 86)
+			getgenv().BreakOut = true
+			rob = true 
+		elseif rob then
+			x.TextStrokeColor3 = Color3.fromRGB(255, 84, 84)
+			getgenv().BreakOut = false
+			rob = false
+		end
+	end)
+end
+coroutine.wrap(OIDRS_fake_script)()
+local function GTIG_fake_script() -- Frame.LocalScript 
+	local script = Instance.new('LocalScript', Frame)
+
+	local UIS = game:GetService("UserInputService")
+	function dragify(Frame)
+		dragToggle = nil
+		local dragSpeed = 2
+		dragInput = nil
+		dragStart = nil
+		local dragPos = nil
+		function updateInput(input)
+			local Delta = input.Position - dragStart
+			local Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + Delta.X, startPos.Y.Scale, startPos.Y.Offset + Delta.Y)
+			game:GetService("TweenService"):Create(Frame, TweenInfo.new(0.30), {Position = Position}):Play()
+		end
+		Frame.InputBegan:Connect(function(input)
+			if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) and UIS:GetFocusedTextBox() == nil then
+				dragToggle = true
+				dragStart = input.Position
+				startPos = Frame.Position
+				input.Changed:Connect(function()
+					if input.UserInputState == Enum.UserInputState.End then
+						dragToggle = false
+					end
+				end)
+			end
+		end)
+		Frame.InputChanged:Connect(function(input)
+			if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+				dragInput = input
+			end
+		end)
+		game:GetService("UserInputService").InputChanged:Connect(function(input)
+			if input == dragInput and dragToggle then
+				updateInput(input)
+			end
+		end)
+	end
+	
+	dragify(script.Parent)
+end
+coroutine.wrap(GTIG_fake_script)()
+
+--IMPORTANT AS me
+
+getgenv().customui = true
+getgenv().textstat = game:GetService('CoreGui').Poopal.Frame.STATS
+loadstring(game:HttpGet("https://raw.githubusercontent.com/RGBBOIFORH/beta/master/boi"))()
