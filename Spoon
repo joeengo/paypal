@@ -1,0 +1,182 @@
+--UI BY JOE ENGO
+-- Instances:
+
+local Keybinds = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local Title = Instance.new("TextLabel")
+local Rob = Instance.new("TextLabel")
+local KA = Instance.new("TextLabel")
+local AA = Instance.new("TextLabel")
+local Stats = Instance.new("TextLabel")
+local Store = Instance.new("TextLabel")
+
+--Properties:
+
+Keybinds.Name = "Keybinds"
+Keybinds.Parent = game:GetService("CoreGui")
+Keybinds.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Frame.Parent = Keybinds
+Frame.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Frame.BackgroundTransparency = 0.350
+Frame.BorderSizePixel = 0
+Frame.Position = UDim2.new(0.836431205, 0, 0.36984691, 0)
+Frame.Size = UDim2.new(0, 195, 0, 201)
+
+Title.Name = "Title"
+Title.Parent = Frame
+Title.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Title.BackgroundTransparency = 1.000
+Title.Size = UDim2.new(0, 195, 0, 24)
+Title.Font = Enum.Font.GothamBlack
+Title.Text = "Paypal Keybinds"
+Title.TextColor3 = Color3.fromRGB(255, 255, 255)
+Title.TextScaled = true
+Title.TextSize = 14.000
+Title.TextWrapped = true
+
+Rob.Name = "Rob"
+Rob.Parent = Frame
+Rob.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Rob.BackgroundTransparency = 1.000
+Rob.Position = UDim2.new(0.111378193, 0, 0.164179102, 0)
+Rob.Size = UDim2.new(0, 150, 0, 22)
+Rob.Font = Enum.Font.GothamSemibold
+Rob.Text = "Autorob = C"
+Rob.TextColor3 = Color3.fromRGB(255, 255, 255)
+Rob.TextScaled = true
+Rob.TextSize = 14.000
+Rob.TextWrapped = true
+
+KA.Name = "KA"
+KA.Parent = Frame
+KA.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+KA.BackgroundTransparency = 1.000
+KA.Position = UDim2.new(0.111378193, 0, 0.313432872, 0)
+KA.Size = UDim2.new(0, 150, 0, 22)
+KA.Font = Enum.Font.GothamSemibold
+KA.Text = "Killaura = X"
+KA.TextColor3 = Color3.fromRGB(255, 255, 255)
+KA.TextScaled = true
+KA.TextSize = 14.000
+KA.TextWrapped = true
+
+AA.Name = "AA"
+AA.Parent = Frame
+AA.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+AA.BackgroundTransparency = 1.000
+AA.Position = UDim2.new(0.111378193, 0, 0.477611959, 0)
+AA.Size = UDim2.new(0, 150, 0, 22)
+AA.Font = Enum.Font.GothamSemibold
+AA.Text = "AntiArrest = Z"
+AA.TextColor3 = Color3.fromRGB(255, 255, 255)
+AA.TextScaled = true
+AA.TextSize = 14.000
+AA.TextWrapped = true
+
+Stats.Name = "Stats"
+Stats.Parent = Frame
+Stats.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Stats.BackgroundTransparency = 1.000
+Stats.Position = UDim2.new(0, 0, 0.636815906, 0)
+Stats.Size = UDim2.new(0, 195, 0, 31)
+Stats.Font = Enum.Font.GothamBold
+Stats.Text = "Stats"
+Stats.TextColor3 = Color3.fromRGB(255, 255, 255)
+Stats.TextScaled = true
+Stats.TextSize = 14.000
+Stats.TextWrapped = true
+
+Store.Name = "Store"
+Store.Parent = Frame
+Store.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Store.BackgroundTransparency = 1.000
+Store.Position = UDim2.new(0, 0, 0.791044772, 0)
+Store.Size = UDim2.new(0, 195, 0, 31)
+Store.Font = Enum.Font.GothamBold
+Store.Text = "Store"
+Store.TextColor3 = Color3.fromRGB(255, 255, 255)
+Store.TextScaled = true
+Store.TextSize = 14.000
+Store.TextWrapped = true
+
+-- Scripts:
+
+local function IQBKW_fake_script() -- Keybinds.Enola 
+	local script = Instance.new('LocalScript', Keybinds)
+
+	local player = game:GetService("Players").LocalPlayer
+	local mouse = player:GetMouse()
+	local p = false
+	local f = false
+	local l = false
+	local green = Color3.new(0.25098, 1, 0.337255)
+	local red = Color3.new(1, 0.258824, 0.258824)
+	local rob = script.Parent.Frame.Rob
+	local KA = script.Parent.Frame.KA
+	local AA = script.Parent.Frame.AA
+	
+	script.Parent.Frame.Rob.TextColor3 = red
+	script.Parent.Frame.AA.TextColor3 = red
+	script.Parent.Frame.KA.TextColor3 = red
+	
+	function KeyDownRob(k)
+		if k == "c" then
+			if not f then
+				rob.TextColor3 = green
+				getgenv().AutoRob = true
+				print("Autorob On")
+				f = true
+			elseif f then
+				rob.TextColor3 = red
+				getgenv().AutoRob = false
+				print("Autorob Off")
+				f = false
+			end
+		end
+	end
+	
+	function KeyDownKA(k)
+		if k == "x" then
+			if not l then
+				KA.TextColor3 = green
+				getgenv().killaura = true
+				print("Killaura On")
+				l = true
+			elseif l then
+				KA.TextColor3 = red
+				getgenv().killaura = false
+				print("Killaura Off")
+				l = false
+			end
+		end
+	end
+	
+	function KeyDownAA(k)
+		if k == "z" then
+			if not p then
+				AA.TextColor3 = green
+				getgenv().BreakOut = true
+				print("Anti Arrest On")
+				p = true
+			elseif p then
+				AA.TextColor3 = red
+				getgenv().AutoRob = false
+				print("Anti Arrest Off")
+				p = false
+			end
+		end
+	end
+	
+	mouse.KeyDown:connect(KeyDownAA)
+	mouse.KeyDown:connect(KeyDownKA)
+	mouse.KeyDown:connect(KeyDownRob)
+		
+	
+end
+coroutine.wrap(IQBKW_fake_script)()
+getgenv().currentstore = game:GetService("CoreGui").Keybinds.Frame.Store
+getgenv().textstat = game:GetService('CoreGui').Keybinds.Frame.Stats
+getgenv().customui = true
+loadstring(game:HttpGet("https://raw.githubusercontent.com/HazeWasTaken/JailedHax/master/AutRob"))()
+
