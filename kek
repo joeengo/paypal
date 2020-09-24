@@ -108,7 +108,7 @@ ImageLabel.BackgroundTransparency = 1.000
 ImageLabel.Position = UDim2.new(0.0237582196, 0, -0.433843553, 0)
 ImageLabel.Size = UDim2.new(0, 89, 0, 49)
 ImageLabel.ZIndex = 11
-ImageLabel.Image = "rbxassetid://5729469620"
+ImageLabel.Image = "rbxassetid://80875793"
 
 Main.Name = "Main"
 Main.Parent = Bar
@@ -300,7 +300,7 @@ ImageLabel_2.BackgroundTransparency = 1.000
 ImageLabel_2.Position = UDim2.new(0.102897309, 0, 0.149727508, 0)
 ImageLabel_2.Size = UDim2.new(0, 145, 0, 79)
 ImageLabel_2.ZIndex = 15
-ImageLabel_2.Image = "rbxassetid://5729469620"
+ImageLabel_2.Image = "rbxassetid://80875793"
 
 TextLabel.Parent = Frame
 TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
