@@ -1,0 +1,484 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local paypalobvs = Instance.new("ScreenGui")
+local Bar = Instance.new("ImageLabel")
+local X = Instance.new("TextButton")
+local TextButton_Roundify_8px = Instance.new("ImageLabel")
+local M = Instance.new("TextButton")
+local TextButton_Roundify_8px_2 = Instance.new("ImageLabel")
+local ImageLabel = Instance.new("ImageLabel")
+local Main = Instance.new("ImageLabel")
+local KA = Instance.new("TextButton")
+local TextButton_Roundify_8px_3 = Instance.new("ImageLabel")
+local Rob = Instance.new("TextButton")
+local TextButton_Roundify_8px_4 = Instance.new("ImageLabel")
+local AntiArrest = Instance.new("TextButton")
+local TextButton_Roundify_8px_5 = Instance.new("ImageLabel")
+local CurrentStore = Instance.new("TextLabel")
+local Stats = Instance.new("TextLabel")
+local Noti = Instance.new("TextLabel")
+local Background = Instance.new("ImageLabel")
+local Text1 = Instance.new("TextLabel")
+local Frame = Instance.new("ImageLabel")
+local ImageLabel_2 = Instance.new("ImageLabel")
+local TextLabel = Instance.new("TextLabel")
+
+--Properties:
+
+paypalobvs.Name = "paypal0"
+paypalobvs.Parent = game:GetService("CoreGui")
+
+Bar.Name = "Bar"
+Bar.Parent = paypalobvs
+Bar.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Bar.BackgroundTransparency = 1.000
+Bar.Position = UDim2.new(0.630221725, 0, 0.381625444, 0)
+Bar.Size = UDim2.new(0, 376, 0, 27)
+Bar.ZIndex = 10
+Bar.Image = "rbxassetid://3570695787"
+Bar.ImageColor3 = Color3.fromRGB(18, 18, 18)
+Bar.ScaleType = Enum.ScaleType.Slice
+Bar.SliceCenter = Rect.new(100, 100, 100, 100)
+Bar.SliceScale = 0.080
+
+X.Name = "X"
+X.Parent = Bar
+X.BackgroundColor3 = Color3.fromRGB(226, 226, 95)
+X.BackgroundTransparency = 1.000
+X.BorderSizePixel = 0
+X.Position = UDim2.new(0.925027668, 0, 0.129564196, 0)
+X.Size = UDim2.new(0, 22, 0, 19)
+X.ZIndex = 11
+X.Font = Enum.Font.SourceSans
+X.Text = ""
+X.TextColor3 = Color3.fromRGB(0, 0, 0)
+X.TextSize = 14.000
+
+TextButton_Roundify_8px.Name = "TextButton_Roundify_8px"
+TextButton_Roundify_8px.Parent = X
+TextButton_Roundify_8px.Active = true
+TextButton_Roundify_8px.AnchorPoint = Vector2.new(0.5, 0.5)
+TextButton_Roundify_8px.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_Roundify_8px.BackgroundTransparency = 1.000
+TextButton_Roundify_8px.Position = UDim2.new(0.5, 0, 0.5, 0)
+TextButton_Roundify_8px.Selectable = true
+TextButton_Roundify_8px.Size = UDim2.new(1, 0, 1, 0)
+TextButton_Roundify_8px.ZIndex = 11
+TextButton_Roundify_8px.Image = "rbxassetid://3570695787"
+TextButton_Roundify_8px.ImageColor3 = Color3.fromRGB(255, 69, 69)
+TextButton_Roundify_8px.ScaleType = Enum.ScaleType.Slice
+TextButton_Roundify_8px.SliceCenter = Rect.new(100, 100, 100, 100)
+TextButton_Roundify_8px.SliceScale = 0.080
+
+M.Name = "M"
+M.Parent = Bar
+M.BackgroundColor3 = Color3.fromRGB(226, 226, 95)
+M.BackgroundTransparency = 1.000
+M.BorderSizePixel = 0
+M.Position = UDim2.new(0.847900033, 0, 0.129564196, 0)
+M.Size = UDim2.new(0, 22, 0, 19)
+M.ZIndex = 11
+M.Font = Enum.Font.SourceSans
+M.Text = ""
+M.TextColor3 = Color3.fromRGB(0, 0, 0)
+M.TextSize = 14.000
+
+TextButton_Roundify_8px_2.Name = "TextButton_Roundify_8px"
+TextButton_Roundify_8px_2.Parent = M
+TextButton_Roundify_8px_2.Active = true
+TextButton_Roundify_8px_2.AnchorPoint = Vector2.new(0.5, 0.5)
+TextButton_Roundify_8px_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_Roundify_8px_2.BackgroundTransparency = 1.000
+TextButton_Roundify_8px_2.Position = UDim2.new(0.5, 0, 0.5, 0)
+TextButton_Roundify_8px_2.Selectable = true
+TextButton_Roundify_8px_2.Size = UDim2.new(1, 0, 1, 0)
+TextButton_Roundify_8px_2.ZIndex = 11
+TextButton_Roundify_8px_2.Image = "rbxassetid://3570695787"
+TextButton_Roundify_8px_2.ImageColor3 = Color3.fromRGB(255, 250, 78)
+TextButton_Roundify_8px_2.ScaleType = Enum.ScaleType.Slice
+TextButton_Roundify_8px_2.SliceCenter = Rect.new(100, 100, 100, 100)
+TextButton_Roundify_8px_2.SliceScale = 0.080
+
+ImageLabel.Parent = Bar
+ImageLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel.BackgroundTransparency = 1.000
+ImageLabel.Position = UDim2.new(0.0237582196, 0, -0.433843553, 0)
+ImageLabel.Size = UDim2.new(0, 89, 0, 49)
+ImageLabel.ZIndex = 11
+ImageLabel.Image = "rbxassetid://5729469620"
+
+Main.Name = "Main"
+Main.Parent = Bar
+Main.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Main.BackgroundTransparency = 1.000
+Main.ClipsDescendants = true
+Main.Position = UDim2.new(-0.00247506052, 0, -0.0111242011, 0)
+Main.Size = UDim2.new(0, 376, 0, 181)
+Main.ZIndex = 4
+Main.Image = "rbxassetid://3570695787"
+Main.ImageColor3 = Color3.fromRGB(27, 27, 27)
+Main.ScaleType = Enum.ScaleType.Slice
+Main.SliceCenter = Rect.new(100, 100, 100, 100)
+Main.SliceScale = 0.080
+
+KA.Name = "KA"
+KA.Parent = Main
+KA.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+KA.BackgroundTransparency = 1.000
+KA.BorderSizePixel = 0
+KA.Position = UDim2.new(0.0771276578, 0, 0.204419896, 0)
+KA.Size = UDim2.new(0, 110, 0, 35)
+KA.ZIndex = 6
+KA.Font = Enum.Font.SourceSansBold
+KA.Text = "Killaura"
+KA.TextColor3 = Color3.fromRGB(255, 255, 255)
+KA.TextSize = 24.000
+KA.TextWrapped = true
+
+TextButton_Roundify_8px_3.Name = "TextButton_Roundify_8px"
+TextButton_Roundify_8px_3.Parent = KA
+TextButton_Roundify_8px_3.Active = true
+TextButton_Roundify_8px_3.AnchorPoint = Vector2.new(0.5, 0.5)
+TextButton_Roundify_8px_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_Roundify_8px_3.BackgroundTransparency = 1.000
+TextButton_Roundify_8px_3.Position = UDim2.new(0.504587173, 0, 0.5, 0)
+TextButton_Roundify_8px_3.Selectable = true
+TextButton_Roundify_8px_3.Size = UDim2.new(1.00917435, 0, 1, 0)
+TextButton_Roundify_8px_3.ZIndex = 5
+TextButton_Roundify_8px_3.Image = "rbxassetid://3570695787"
+TextButton_Roundify_8px_3.ImageColor3 = Color3.fromRGB(40, 40, 40)
+TextButton_Roundify_8px_3.ScaleType = Enum.ScaleType.Slice
+TextButton_Roundify_8px_3.SliceCenter = Rect.new(100, 100, 100, 100)
+TextButton_Roundify_8px_3.SliceScale = 0.080
+
+Rob.Name = "Rob"
+Rob.Parent = Main
+Rob.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Rob.BackgroundTransparency = 1.000
+Rob.BorderSizePixel = 0
+Rob.Position = UDim2.new(0.0744680837, 0, 0.436464101, 0)
+Rob.Size = UDim2.new(0, 110, 0, 35)
+Rob.ZIndex = 6
+Rob.Font = Enum.Font.SourceSansBold
+Rob.Text = "Autorob"
+Rob.TextColor3 = Color3.fromRGB(255, 255, 255)
+Rob.TextSize = 24.000
+Rob.TextWrapped = true
+
+TextButton_Roundify_8px_4.Name = "TextButton_Roundify_8px"
+TextButton_Roundify_8px_4.Parent = Rob
+TextButton_Roundify_8px_4.Active = true
+TextButton_Roundify_8px_4.AnchorPoint = Vector2.new(0.5, 0.5)
+TextButton_Roundify_8px_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_Roundify_8px_4.BackgroundTransparency = 1.000
+TextButton_Roundify_8px_4.Position = UDim2.new(0.504587173, 0, 0.5, 0)
+TextButton_Roundify_8px_4.Selectable = true
+TextButton_Roundify_8px_4.Size = UDim2.new(1.00917435, 0, 1, 0)
+TextButton_Roundify_8px_4.ZIndex = 5
+TextButton_Roundify_8px_4.Image = "rbxassetid://3570695787"
+TextButton_Roundify_8px_4.ImageColor3 = Color3.fromRGB(40, 40, 40)
+TextButton_Roundify_8px_4.ScaleType = Enum.ScaleType.Slice
+TextButton_Roundify_8px_4.SliceCenter = Rect.new(100, 100, 100, 100)
+TextButton_Roundify_8px_4.SliceScale = 0.080
+
+AntiArrest.Name = "AntiArrest"
+AntiArrest.Parent = Main
+AntiArrest.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+AntiArrest.BackgroundTransparency = 1.000
+AntiArrest.BorderSizePixel = 0
+AntiArrest.Position = UDim2.new(0.0744680837, 0, 0.668508291, 0)
+AntiArrest.Size = UDim2.new(0, 110, 0, 35)
+AntiArrest.ZIndex = 6
+AntiArrest.Font = Enum.Font.SourceSansBold
+AntiArrest.Text = "AntiArrest"
+AntiArrest.TextColor3 = Color3.fromRGB(255, 255, 255)
+AntiArrest.TextSize = 24.000
+AntiArrest.TextWrapped = true
+
+TextButton_Roundify_8px_5.Name = "TextButton_Roundify_8px"
+TextButton_Roundify_8px_5.Parent = AntiArrest
+TextButton_Roundify_8px_5.Active = true
+TextButton_Roundify_8px_5.AnchorPoint = Vector2.new(0.5, 0.5)
+TextButton_Roundify_8px_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_Roundify_8px_5.BackgroundTransparency = 1.000
+TextButton_Roundify_8px_5.Position = UDim2.new(0.504587173, 0, 0.5, 0)
+TextButton_Roundify_8px_5.Selectable = true
+TextButton_Roundify_8px_5.Size = UDim2.new(1.00917435, 0, 1, 0)
+TextButton_Roundify_8px_5.ZIndex = 5
+TextButton_Roundify_8px_5.Image = "rbxassetid://3570695787"
+TextButton_Roundify_8px_5.ImageColor3 = Color3.fromRGB(40, 40, 40)
+TextButton_Roundify_8px_5.ScaleType = Enum.ScaleType.Slice
+TextButton_Roundify_8px_5.SliceCenter = Rect.new(100, 100, 100, 100)
+TextButton_Roundify_8px_5.SliceScale = 0.080
+
+CurrentStore.Name = "CurrentStore"
+CurrentStore.Parent = Main
+CurrentStore.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+CurrentStore.BackgroundTransparency = 1.000
+CurrentStore.Position = UDim2.new(0.396276593, 0, 0.243093923, 0)
+CurrentStore.Size = UDim2.new(0, 214, 0, 54)
+CurrentStore.ZIndex = 4
+CurrentStore.Font = Enum.Font.SourceSansBold
+CurrentStore.Text = ""
+CurrentStore.TextColor3 = Color3.fromRGB(255, 255, 255)
+CurrentStore.TextSize = 25.000
+CurrentStore.TextWrapped = true
+
+Stats.Name = "Stats"
+Stats.Parent = Main
+Stats.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Stats.BackgroundTransparency = 1.000
+Stats.Position = UDim2.new(0.396276593, 0, 0.541436493, 0)
+Stats.Size = UDim2.new(0, 214, 0, 54)
+Stats.ZIndex = 4
+Stats.Font = Enum.Font.SourceSansBold
+Stats.Text = ""
+Stats.TextColor3 = Color3.fromRGB(255, 255, 255)
+Stats.TextSize = 25.000
+Stats.TextWrapped = true
+
+Noti.Name = "Noti"
+Noti.Parent = Bar
+Noti.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Noti.BackgroundTransparency = 1.000
+Noti.BorderSizePixel = 0
+Noti.Position = UDim2.new(0, 0, 0.129564077, 0)
+Noti.Size = UDim2.new(0, 375, 0, 95)
+Noti.ZIndex = 3
+Noti.Font = Enum.Font.GothamSemibold
+Noti.Text = "You Need To Own Plasma Pistol to Use Killaura"
+Noti.TextColor3 = Color3.fromRGB(255, 255, 255)
+Noti.TextSize = 14.000
+Noti.TextWrapped = true
+
+Background.Name = "Background"
+Background.Parent = Noti
+Background.AnchorPoint = Vector2.new(0.5, 0.5)
+Background.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Background.BackgroundTransparency = 1.000
+Background.Position = UDim2.new(0.5, 0, 0.5, 0)
+Background.Size = UDim2.new(1, 0, 1, 0)
+Background.Image = "rbxassetid://3570695787"
+Background.ImageColor3 = Color3.fromRGB(27, 27, 27)
+Background.ScaleType = Enum.ScaleType.Slice
+Background.SliceCenter = Rect.new(100, 100, 100, 100)
+Background.SliceScale = 0.090
+
+Text1.Name = "Text1"
+Text1.Parent = Noti
+Text1.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Text1.BackgroundTransparency = 1.000
+Text1.Size = UDim2.new(0, 375, 0, 21)
+Text1.Font = Enum.Font.GothamBlack
+Text1.Text = "Notification"
+Text1.TextColor3 = Color3.fromRGB(255, 255, 255)
+Text1.TextScaled = true
+Text1.TextSize = 14.000
+Text1.TextWrapped = true
+
+Frame.Name = "Frame"
+Frame.Parent = paypalobvs
+Frame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Frame.BackgroundTransparency = 1.000
+Frame.ClipsDescendants = true
+Frame.Position = UDim2.new(0.629673839, 0, 0.381034464, 0)
+Frame.Size = UDim2.new(0, 184, 0, 177)
+Frame.Visible = false
+Frame.ZIndex = 15
+Frame.Image = "rbxassetid://3570695787"
+Frame.ImageColor3 = Color3.fromRGB(27, 27, 27)
+Frame.ScaleType = Enum.ScaleType.Slice
+Frame.SliceCenter = Rect.new(100, 100, 100, 100)
+Frame.SliceScale = 0.120
+
+ImageLabel_2.Parent = Frame
+ImageLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel_2.BackgroundTransparency = 1.000
+ImageLabel_2.Position = UDim2.new(0.102897309, 0, 0.149727508, 0)
+ImageLabel_2.Size = UDim2.new(0, 145, 0, 79)
+ImageLabel_2.ZIndex = 15
+ImageLabel_2.Image = "rbxassetid://5729469620"
+
+TextLabel.Parent = Frame
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.Position = UDim2.new(-0.0326087028, 0, 0.87005651, 0)
+TextLabel.Size = UDim2.new(0, 196, 0, 23)
+TextLabel.ZIndex = 15
+TextLabel.Font = Enum.Font.GothamSemibold
+TextLabel.Text = "UI By Joe Engo#6982"
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextSize = 10.000
+
+-- Scripts:
+
+local function UHFLEJ_fake_script() -- Bar.LocalScript 
+	local script = Instance.new('LocalScript', Bar)
+
+	local UIS = game:GetService("UserInputService")
+	function dragify(Frame)
+		dragToggle = nil
+		local dragSpeed = 2
+		dragInput = nil
+		dragStart = nil
+		local dragPos = nil
+		function updateInput(input)
+			local Delta = input.Position - dragStart
+			local Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + Delta.X, startPos.Y.Scale, startPos.Y.Offset + Delta.Y)
+			game:GetService("TweenService"):Create(Frame, TweenInfo.new(0.30), {Position = Position}):Play()
+		end
+		Frame.InputBegan:Connect(function(input)
+			if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) and UIS:GetFocusedTextBox() == nil then
+				dragToggle = true
+				dragStart = input.Position
+				startPos = Frame.Position
+				input.Changed:Connect(function()
+					if input.UserInputState == Enum.UserInputState.End then
+						dragToggle = false
+					end
+				end)
+			end
+		end)
+		Frame.InputChanged:Connect(function(input)
+			if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+				dragInput = input
+			end
+		end)
+		game:GetService("UserInputService").InputChanged:Connect(function(input)
+			if input == dragInput and dragToggle then
+				updateInput(input)
+			end
+		end)
+	end
+	
+	dragify(script.Parent)
+end
+coroutine.wrap(UHFLEJ_fake_script)()
+local function VMWE_fake_script() -- paypalobvs.Handler 
+	local script = Instance.new('Script', paypalobvs)
+
+	script.Parent.Bar.Main.Size = UDim2.new(0, 376 ,0, 183)
+	script.Parent.Bar.Noti.Visible = false
+	function notif(text1, waitTime)
+		script.Parent.Bar.Noti.Visible = true
+		script.Parent.Bar.Noti:TweenPosition(UDim2.new(-0.003, 0,-2.952, 0), "Out", 1)
+		script.Parent.Bar.Noti.Text = text1
+		wait(waitTime)
+		script.Parent.Bar.Noti:TweenPosition(UDim2.new(0, 0, 0.13, 0), "Out", 1)
+		wait(1)
+		script.Parent.Bar.Noti.Visible = false
+	
+	end
+	
+	
+	
+	local open = true
+	script.Parent.Bar.M.MouseButton1Click:Connect(function()
+		if open then
+			script.Parent.Bar.Main:TweenSize(UDim2.new(0, 376, 0, 27))
+			open = false
+		else script.Parent.Bar.Main:TweenSize(UDim2.new(0, 376, 0, 183))
+			open = true
+		end
+	end)
+	
+	script.Parent.Bar.X.MouseButton1Click:Connect(function()
+		script.Parent.Bar.Main:TweenSize(UDim2.new(0, 376, 0, 27), 1)
+		wait(1.08)
+		script.Parent.Bar.Main:Destroy()
+		script.Parent.Bar:TweenSize(UDim2.new(0, 0, 0, 27), 0.8)
+		wait(0.85)
+		script.Parent.Bar.M:Destroy()
+		script.Parent.Bar.X:Destroy()
+		script.Parent.Bar.ImageLabel:Destroy()
+	end)
+	local x = false
+	script.Parent.Bar.Main.KA.TextColor3 = Color3.new(0.988235, 0.247059, 0.258824)
+	script.Parent.Bar.Main.Rob.TextColor3 = Color3.new(0.988235, 0.247059, 0.258824)
+	script.Parent.Bar.Main.AntiArrest.TextColor3 = Color3.new(0.988235, 0.247059, 0.258824)
+	script.Parent.Bar.Main.KA.MouseButton1Click:Connect(function()
+		if not x then
+			script.Parent.Bar.Main.KA.TextColor3 = Color3.new(0.239216, 0.988235, 0.427451)
+			getgenv().killaura = true
+			notif("Killaura Enabled, You will kill all cops nearby. You need to own Plasma Pistol to use Killaura", 3)
+			x = true
+		elseif x then
+			script.Parent.Bar.Main.KA.TextColor3 = Color3.new(0.988235, 0.247059, 0.258824)
+			notif("Killaura Disabled, You will NOT kill all cops nearby. You WILL need to own Plasma Pistol to use Killaura", 3)
+			getgenv().killaura = false
+			x = false
+		end
+	end)
+	script.Parent.Bar.Main.Rob.MouseButton1Click:Connect(function()
+		if not x then
+			script.Parent.Bar.Main.Rob.TextColor3 = Color3.new(0.239216, 0.988235, 0.427451)
+			getgenv().AutoRob = true
+			notif("Autorob Enabled, You will automatically rob all stores and sell for cash.", 2.4)
+			x = true
+		elseif x then
+			script.Parent.Bar.Main.Rob.TextColor3 = Color3.new(0.988235, 0.247059, 0.258824)
+			notif("Autorob Disabled, You will NOT automatically rob all stores and sell for cash.", 2.4)
+			getgenv().AutoRob = false
+			x = false
+		end
+	end)
+	script.Parent.Bar.Main.AntiArrest.MouseButton1Click:Connect(function()
+		if not x then
+			script.Parent.Bar.Main.AntiArrest.TextColor3 = Color3.new(0.239216, 0.988235, 0.427451)
+			notif("AntiArrest Enabled, You will automaticaly break out of handcuffs", 2)
+			getgenv().BreakOut = true
+			x = true
+		elseif x then
+			script.Parent.Bar.Main.AntiArrest.TextColor3 = Color3.new(0.988235, 0.247059, 0.258824)
+			notif("AntiArrest Disabled, You NOT will automaticaly break out of handcuffs", 2)
+			getgenv().BreakOut = false
+			x = false
+		end
+	end)
+	
+	
+	
+	
+end
+coroutine.wrap(VMWE_fake_script)()
+local function FRGRK_fake_script() -- Frame.Tween 
+	local script = Instance.new('Script', Frame)
+
+	script.Parent.Visible = true
+	
+	script.Parent.Parent.Bar.M.Visible = false
+	script.Parent.Parent.Bar.X.Visible = false
+	script.Parent.Parent.Bar.ImageLabel.Visible = false
+	
+	
+	script.Parent.Size = UDim2.new(0, 184, 0, 0)
+	script.Parent.Parent.Bar.Visible = false
+	wait(0.08)
+	script.Parent:TweenSize(UDim2.new(0, 184, 0, 177), "Out", 1.25)
+	wait(2.25)
+	script.Parent:TweenSize(UDim2.new(0, 0, 0, 177), "Out", 2)
+	script.Parent.Parent.Bar.Visible = true
+	script.Parent.Parent.Bar.Size = UDim2.new(0, 0, 0, 27)
+	script.Parent.Parent.Bar.Main.Size = UDim2.new(0, 0, 0, 181)
+	wait(0.8)
+	script.Parent.Parent.Bar:TweenSize(UDim2.new(0, 376, 0, 27), "Out", "Quint", 2)
+	script.Parent.Parent.Bar.Main:TweenSize(UDim2.new(0, 376, 0, 181), "Out", "Quint", 2)
+	wait(0.1)
+	script.Parent.Parent.Bar.M.Visible = true
+	script.Parent.Parent.Bar.X.Visible = true
+	script.Parent.Parent.Bar.ImageLabel.Visible = true
+	wait(1.9)
+	wait(0.01)
+	script.Parent:Destroy()
+end
+coroutine.wrap(FRGRK_fake_script)()
+
+getgenv().currentstore = game:GetService('CoreGui').paypal0.Bar.Main.CurrentStore
+getgenv().textstat = game:GetService('CoreGui').paypal0.Bar.Main.Stats
+getgenv().customui = true
+loadstring(game:HttpGet("https://raw.githubusercontent.com/HazeWasTaken/JailedHax/master/AutRob"))()
+-- paypool winning
+
