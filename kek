@@ -9,7 +9,6 @@ local X = Instance.new("TextButton")
 local TextButton_Roundify_8px = Instance.new("ImageLabel")
 local M = Instance.new("TextButton")
 local TextButton_Roundify_8px_2 = Instance.new("ImageLabel")
-local ImageLabel = Instance.new("ImageLabel")
 local Main = Instance.new("ImageLabel")
 local KA = Instance.new("TextButton")
 local TextButton_Roundify_8px_3 = Instance.new("ImageLabel")
@@ -19,23 +18,24 @@ local AntiArrest = Instance.new("TextButton")
 local TextButton_Roundify_8px_5 = Instance.new("ImageLabel")
 local CurrentStore = Instance.new("TextLabel")
 local Stats = Instance.new("TextLabel")
+local TextLabel = Instance.new("TextLabel")
 local Noti = Instance.new("TextLabel")
 local Background = Instance.new("ImageLabel")
 local Text1 = Instance.new("TextLabel")
 local Frame = Instance.new("ImageLabel")
-local ImageLabel_2 = Instance.new("ImageLabel")
-local TextLabel = Instance.new("TextLabel")
+local TextLabel_2 = Instance.new("TextLabel")
+local TextLabel_3 = Instance.new("TextLabel")
 
 --Properties:
 
-paypalobvs.Name = "paypal0"
-paypalobvs.Parent = game:GetService("CoreGui")
+paypalobvs.Name = "paypal obvs"
+paypalobvs.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
 
 Bar.Name = "Bar"
 Bar.Parent = paypalobvs
 Bar.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Bar.BackgroundTransparency = 1.000
-Bar.Position = UDim2.new(0.630221725, 0, 0.381625444, 0)
+Bar.Position = UDim2.new(0.44857496, 0, 0.367491156, 0)
 Bar.Size = UDim2.new(0, 376, 0, 27)
 Bar.ZIndex = 10
 Bar.Image = "rbxassetid://3570695787"
@@ -101,14 +101,6 @@ TextButton_Roundify_8px_2.ImageColor3 = Color3.fromRGB(255, 250, 78)
 TextButton_Roundify_8px_2.ScaleType = Enum.ScaleType.Slice
 TextButton_Roundify_8px_2.SliceCenter = Rect.new(100, 100, 100, 100)
 TextButton_Roundify_8px_2.SliceScale = 0.080
-
-ImageLabel.Parent = Bar
-ImageLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-ImageLabel.BackgroundTransparency = 1.000
-ImageLabel.Position = UDim2.new(0.0237582196, 0, -0.433843553, 0)
-ImageLabel.Size = UDim2.new(0, 89, 0, 49)
-ImageLabel.ZIndex = 11
-ImageLabel.Image = "rbxassetid://80875793"
 
 Main.Name = "Main"
 Main.Parent = Bar
@@ -240,6 +232,19 @@ Stats.TextColor3 = Color3.fromRGB(255, 255, 255)
 Stats.TextSize = 25.000
 Stats.TextWrapped = true
 
+TextLabel.Parent = Main
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.Position = UDim2.new(-0.0397780389, 0, 0.00815699995, 0)
+TextLabel.Size = UDim2.new(0, 195, 0, 23)
+TextLabel.ZIndex = 30
+TextLabel.Font = Enum.Font.SourceSansLight
+TextLabel.Text = "Autorob by paypal"
+TextLabel.TextColor3 = Color3.fromRGB(13, 176, 208)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 14.000
+TextLabel.TextWrapped = true
+
 Noti.Name = "Noti"
 Noti.Parent = Bar
 Noti.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -284,7 +289,7 @@ Frame.Parent = paypalobvs
 Frame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Frame.BackgroundTransparency = 1.000
 Frame.ClipsDescendants = true
-Frame.Position = UDim2.new(0.629673839, 0, 0.381034464, 0)
+Frame.Position = UDim2.new(0.442998767, 0, 0.368078023, 0)
 Frame.Size = UDim2.new(0, 184, 0, 177)
 Frame.Visible = false
 Frame.ZIndex = 15
@@ -294,28 +299,33 @@ Frame.ScaleType = Enum.ScaleType.Slice
 Frame.SliceCenter = Rect.new(100, 100, 100, 100)
 Frame.SliceScale = 0.120
 
-ImageLabel_2.Parent = Frame
-ImageLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-ImageLabel_2.BackgroundTransparency = 1.000
-ImageLabel_2.Position = UDim2.new(0.102897309, 0, 0.149727508, 0)
-ImageLabel_2.Size = UDim2.new(0, 145, 0, 79)
-ImageLabel_2.ZIndex = 15
-ImageLabel_2.Image = "rbxassetid://80875793"
+TextLabel_2.Parent = Frame
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.BackgroundTransparency = 1.000
+TextLabel_2.Position = UDim2.new(-0.0326087028, 0, 0.87005651, 0)
+TextLabel_2.Size = UDim2.new(0, 196, 0, 23)
+TextLabel_2.ZIndex = 15
+TextLabel_2.Font = Enum.Font.GothamSemibold
+TextLabel_2.Text = "UI By Joe Engo#6982"
+TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.TextSize = 10.000
 
-TextLabel.Parent = Frame
-TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel.BackgroundTransparency = 1.000
-TextLabel.Position = UDim2.new(-0.0326087028, 0, 0.87005651, 0)
-TextLabel.Size = UDim2.new(0, 196, 0, 23)
-TextLabel.ZIndex = 15
-TextLabel.Font = Enum.Font.GothamSemibold
-TextLabel.Text = "UI By Joe Engo#6982"
-TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel.TextSize = 10.000
+TextLabel_3.Parent = Frame
+TextLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.BackgroundTransparency = 1.000
+TextLabel_3.Position = UDim2.new(0.130434781, 0, 0.146892652, 0)
+TextLabel_3.Size = UDim2.new(0, 137, 0, 55)
+TextLabel_3.ZIndex = 30
+TextLabel_3.Font = Enum.Font.SourceSansLight
+TextLabel_3.Text = "Autorob by paypal"
+TextLabel_3.TextColor3 = Color3.fromRGB(13, 176, 208)
+TextLabel_3.TextScaled = true
+TextLabel_3.TextSize = 14.000
+TextLabel_3.TextWrapped = true
 
 -- Scripts:
 
-local function UHFLEJ_fake_script() -- Bar.LocalScript 
+local function YIQS_fake_script() -- Bar.LocalScript 
 	local script = Instance.new('LocalScript', Bar)
 
 	local UIS = game:GetService("UserInputService")
@@ -356,8 +366,8 @@ local function UHFLEJ_fake_script() -- Bar.LocalScript
 	
 	dragify(script.Parent)
 end
-coroutine.wrap(UHFLEJ_fake_script)()
-local function VMWE_fake_script() -- paypalobvs.Handler 
+coroutine.wrap(YIQS_fake_script)()
+local function PITGUCN_fake_script() -- paypalobvs.Handler 
 	local script = Instance.new('Script', paypalobvs)
 
 	script.Parent.Bar.Main.Size = UDim2.new(0, 376 ,0, 183)
@@ -402,26 +412,24 @@ local function VMWE_fake_script() -- paypalobvs.Handler
 	script.Parent.Bar.Main.KA.MouseButton1Click:Connect(function()
 		if not x then
 			script.Parent.Bar.Main.KA.TextColor3 = Color3.new(0.239216, 0.988235, 0.427451)
-			getgenv().killaura = true
+			--getgenv.killaura = true
 			notif("Killaura Enabled, You will kill all cops nearby. You need to own Plasma Pistol to use Killaura", 3)
 			x = true
 		elseif x then
 			script.Parent.Bar.Main.KA.TextColor3 = Color3.new(0.988235, 0.247059, 0.258824)
-			notif("Killaura Disabled, You will NOT kill all cops nearby. You WILL need to own Plasma Pistol to use Killaura", 3)
-			getgenv().killaura = false
+			--getgenv.killaura = false
 			x = false
 		end
 	end)
 	script.Parent.Bar.Main.Rob.MouseButton1Click:Connect(function()
 		if not x then
 			script.Parent.Bar.Main.Rob.TextColor3 = Color3.new(0.239216, 0.988235, 0.427451)
-			getgenv().AutoRob = true
-			notif("Autorob Enabled, You will automatically rob all stores and sell for cash.", 2.4)
+			--getgenv.AutoRob = true
+			notif("Autorob enabled, You will automatically rob all stores and sell for cash.", 2.4)
 			x = true
 		elseif x then
 			script.Parent.Bar.Main.Rob.TextColor3 = Color3.new(0.988235, 0.247059, 0.258824)
-			notif("Autorob Disabled, You will NOT automatically rob all stores and sell for cash.", 2.4)
-			getgenv().AutoRob = false
+			--getgenv.AutoRob = false
 			x = false
 		end
 	end)
@@ -429,12 +437,12 @@ local function VMWE_fake_script() -- paypalobvs.Handler
 		if not x then
 			script.Parent.Bar.Main.AntiArrest.TextColor3 = Color3.new(0.239216, 0.988235, 0.427451)
 			notif("AntiArrest Enabled, You will automaticaly break out of handcuffs", 2)
-			getgenv().BreakOut = true
+			--getgenv.BreakOut = true
 			x = true
 		elseif x then
 			script.Parent.Bar.Main.AntiArrest.TextColor3 = Color3.new(0.988235, 0.247059, 0.258824)
-			notif("AntiArrest Disabled, You NOT will automaticaly break out of handcuffs", 2)
-			getgenv().BreakOut = false
+			
+			--getgenv.BreakOut = false
 			x = false
 		end
 	end)
@@ -443,42 +451,32 @@ local function VMWE_fake_script() -- paypalobvs.Handler
 	
 	
 end
-coroutine.wrap(VMWE_fake_script)()
-local function FRGRK_fake_script() -- Frame.Tween 
+coroutine.wrap(PITGUCN_fake_script)()
+local function MFJZNF_fake_script() -- Frame.Tween 
 	local script = Instance.new('Script', Frame)
 
 	script.Parent.Visible = true
 	
-	script.Parent.Parent.Bar.M.Visible = false
-	script.Parent.Parent.Bar.X.Visible = false
-	script.Parent.Parent.Bar.ImageLabel.Visible = false
-	
-	
 	script.Parent.Size = UDim2.new(0, 184, 0, 0)
 	script.Parent.Parent.Bar.Visible = false
-	wait(0.08)
+	wait(3)
 	script.Parent:TweenSize(UDim2.new(0, 184, 0, 177), "Out", 1.25)
 	wait(2.25)
-	script.Parent:TweenSize(UDim2.new(0, 0, 0, 177), "Out", 2)
+	script.Parent:TweenSize(UDim2.new(0, 0, 0, 177), "In", 1.25)
 	script.Parent.Parent.Bar.Visible = true
 	script.Parent.Parent.Bar.Size = UDim2.new(0, 0, 0, 27)
 	script.Parent.Parent.Bar.Main.Size = UDim2.new(0, 0, 0, 181)
 	wait(0.8)
 	script.Parent.Parent.Bar:TweenSize(UDim2.new(0, 376, 0, 27), "Out", "Quint", 2)
 	script.Parent.Parent.Bar.Main:TweenSize(UDim2.new(0, 376, 0, 181), "Out", "Quint", 2)
-	wait(0.1)
-	script.Parent.Parent.Bar.M.Visible = true
-	script.Parent.Parent.Bar.X.Visible = true
-	script.Parent.Parent.Bar.ImageLabel.Visible = true
-	wait(1.9)
-	wait(0.01)
+	wait(2)
+	wait(0.08)
 	script.Parent:Destroy()
 end
-coroutine.wrap(FRGRK_fake_script)()
+coroutine.wrap(MFJZNF_fake_script)()
 
 getgenv().currentstore = game:GetService('CoreGui').paypal0.Bar.Main.CurrentStore
 getgenv().textstat = game:GetService('CoreGui').paypal0.Bar.Main.Stats
 getgenv().customui = true
 loadstring(game:HttpGet("https://raw.githubusercontent.com/HazeWasTaken/JailedHax/master/AutRob"))()
 -- paypool winning
-
